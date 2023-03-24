@@ -1,0 +1,18 @@
+.app__futur {
+  height: 100%;
+  width: 100%;
+
+  .app__futur-canvas {
+    position: absolute !important;
+    margin-top: 4rem;
+    canvas {
+      width: 90%;
+    }
+  }
+}
+.app__futur-title {
+  background: linear-gradient(30deg, #c850c0, #ffcc70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+}
