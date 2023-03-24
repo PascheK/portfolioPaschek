@@ -127,7 +127,7 @@
 
 .app__skills-exp-year {
   margin-right: 3rem;
-
+  width: 90px;
   p {
     font-weight: 800;
     color: var(--secondary-color);
@@ -148,6 +148,7 @@
   text-align: center !important;
   line-height: 1.5 !important;
   opacity: 1 !important;
+  left: unset !important;
 
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem !important;

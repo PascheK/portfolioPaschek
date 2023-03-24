@@ -1,3 +1,8 @@
+#futur{
+  .copyright{
+    display: none;
+  }
+}
 .app__futur {
   height: 100%;
   width: 100%;
@@ -6,7 +11,7 @@
     position: absolute !important;
     margin-top: 4rem;
     canvas {
-      width: 90%;
+      height: 90% !important;
     }
   }
 }

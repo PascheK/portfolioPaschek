@@ -5,6 +5,7 @@ import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Skills.scss';
+import '../../../node_modules/react-tooltip/dist/react-tooltip.css'
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -62,8 +63,11 @@ const Skills = () => {
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
                       className="app__skills-exp-work"
-                      data-tip
-                      //data-tooltip-id={work.name}
+                      data-tooltip-id={work.name}
+                      data-tooltip-content={work.desc} 
+                      data-tooltip-place="bottom"
+                      data-tooltip-variant="success"
+
                       key={work.name}
                     >
                       <h4 className="bold-text">{work.name}</h4>
@@ -71,11 +75,8 @@ const Skills = () => {
                     </motion.div>
                     <ReactTooltip
                       id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
                       className="skills-tooltip"
                     >
-                      {work.desc}
                     </ReactTooltip>
                   </>
                 ))}
