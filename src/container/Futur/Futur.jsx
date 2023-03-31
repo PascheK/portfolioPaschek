@@ -11,13 +11,13 @@ import { motion } from 'framer-motion';
 const Futur = () => {
   return (
     <>
-      <motion.h1
+      <motion.h2
         className='app__futur-title'
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}    >
         Futur is now !
 
-      </motion.h1>
+      </motion.h2>
       <Canvas className='app__futur-canvas' camera={{ position: [0, 0, 1] }}>
         <Stars />
       </Canvas>
